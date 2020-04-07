@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+/* Global Styles */
+
+:root {
+  --green-light: #32f1c4;
+  --green-dark: #28a745;
+  --navy: #0b1d51;
+  --white: #fff;
+  --white-light: rgba(255,255,255,.5);
+}
+
+/* Header Style */
+
+.navbar{
+  background: #ce342a;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);
+  font-size: .9rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--white-light);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  letter-spacing: 8px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background: #f21411;
+}
+
+a[href^="tel"] span {
+  color: #000;
+}
+
+svg {
+  max-width: 1rem;
+  max-height: 1rem;
+}
+
+/* Hero Carousel Section Styles */
+
+.carousel {
+  background: #55798d;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  padding: 1em .5em;
+  border: solid 1px;
+}
+
+.carousel-img {
+  max-width: 100vw;
+  height: 91vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  bottom: 33%;
+}
+
+.carousel-caption p {
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.btn-success {
+  background-color: var(--green-light);
+  border-color: var(--green-light);
+  font-weight: bolder;
+  padding: .7rem 1.2rem;
+}
+
+h1 {
+  font-family: 'Nothing you Could Do', monospace;
+  font-size: 15vmin;
+  margin-bottom: 0;
+}
+
+/* About Section Styles */
+
+.navy {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+/* Video Section Styles #218838 */
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+video {
+  width: 100vw;
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 99;
+}
+
+.overlay-text {
+  font-family: 'Nothing You Could Do';
+  font-size: 10vmin;
+  color: rgba(255, 255, 255, .9)
+}
+
+.fa-play-circle {
+  color: var(--green-light);
+}
+
+.fa-play-circle:hover,
+.fa-play-circle:focus {
+  color: var(--green-dark);
+}
+
+/* Testimonial Section Style */
+
+.testimonial {
+  background: var(--white);
+}
+
+.testimonial .carousel-caption {
+  color: #000;
+}
+
+.testimonial img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+/* Footer Section Style */
+
+footer {
+  background: var(--navy);
+}
+
+footer > *,
+footer a {
+  color: var(--white);
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: none;
+  color: var(--white-light);
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+li:not(.title) {
+  font-weight: 300;
+}
+
+.social {
+  max-width: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 30%);
+  grid-template-rows: 40px 25px;
+}
+
+.social .title {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 5; */
+  grid-column: 1 / 5;
+}
+
+.line {
+  border-bottom: 1px solid var(--white);
+}
+
+.fa-heart {
+  color: red;
+}
+
+.fa-bootstrap {
+  color: #563d7c;
+}

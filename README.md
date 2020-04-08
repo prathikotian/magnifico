@@ -1,3 +1,3 @@
 # MAGNIFICO 
-# Bbootstrap Demo Website
+# Bootstrap Demo Website
 :heart: Resposive website built using Bootstrap
